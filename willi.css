@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(200, 214, 221);
+}
+
+.topPart{
+    width: 100%;
+    height: 32vh;
+    background-color: rgb(241, 246, 250);
+    margin-bottom: 40px;
+}
+
+.mainPart{
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    background-color: rgb(200, 214, 221);
+}
+
+.mainLeft{
+    width: 60%;
+    /* margin: 10px; */
+}
+
+.mainRight{
+    width: 30%;
+    /* margin: 10px; */
+}
+
+.cards{
+    width: auto;
+    height: auto;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}

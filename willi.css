@@ -11,25 +11,40 @@ body{
     height: 32vh;
     background-color: rgb(241, 246, 250);
     margin-bottom: 40px;
+    display: flex;
+}
+
+.width{
+    width: 70%;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 50px;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+.topPart-is{
+    display: flex;
+    gap: 40px;
 }
 
 .mainPart{
-    width: 100%;
+    width: 70%;
     height: 300vh;
     display: flex;
     gap: 30px;
     justify-content: center;
     background-color: rgb(200, 214, 221);
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .mainLeft{
     width: 60%;
-    /* margin: 10px; */
 }
 
 .mainRight{
     width: 30%;
-    /* margin: 10px; */
 }
 
 .cards{
@@ -37,6 +52,95 @@ body{
     height: auto;
     background-color: aliceblue;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 5px;
+}
+
+.img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+.img-1 {
+    width: 40%;
+    height: 40%;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: rgb(95, 186, 219);
+    width: 180px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 900;
+    font-size: medium;
+}
+.switch {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .mainPart {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .topPart {
+    background-color: rgb(33, 32, 32);
+    color: white;
+}
+
+.dark-mode .cards {
+    background-color: rgb(33, 32, 32);
+    color: white;
 }
